@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fraunces;
+    src: url(./font/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    background-color:  hsl(30, 38%, 92%);
+}
+
+.content{
+    width: 666px;
+    height: 440px;
+    display: flex;
+    margin-inline: auto;
+    margin-top: 80px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 10px 10px
+}
+
+.side1{
+    width: 50%;
+}
+
+.side1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.side2{
+    width: 50%;
+    height: auto;
+    padding: 30px 35px;
+}
+
+p.head-sm{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+h1.head-big{
+    font-family: fraunces;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p.info{
+    font-family: montserrat;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+div.price-tag{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+div.price{
+    color: hsl(158, 36%, 37%);
+    font-family: fraunces;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+div.price-sm{
+    color: hsl(228, 12%, 48%);
+    font-family: montserrat;
+    padding-left: 20px;
+}
+
+i.cart{
+    width: 15px;
+    height: 15px;
+    background-image: url('./images/icon-cart.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+
+}
+
+div button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 10px 50px;
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all.5s;
+}
+
+div button:hover{
+    background-color: #1a4031;
+}
+
+
+@media (max-width: 679px) {
+    .content{
+        width: 400px;
+        display: block;
+        border-radius: 10px 10px 0 0px;
+        /* margin-inline: auto; */
+    }
+
+    .side1{
+        width: 100%;
+    }
+
+    .side1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0px;
+    }
+
+    .side2{
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 0 10px 10px;
+
+    }  
+}    
+
+@media (max-width:468px) {
+    .content{
+        width: 300px;
+        /* display: block; */
+        /* margin-inline: auto; */
+    }
+}
